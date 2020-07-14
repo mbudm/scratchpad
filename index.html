@@ -1,0 +1,840 @@
+<html>
+
+<head>
+  <style type="text/css">
+    @charset "UTF-8";
+
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak,
+    .ng-hide:not(.ng-hide-animate) {
+      display: none !important;
+    }
+
+    ng\:form {
+      display: block;
+    }
+
+    .ng-animate-shim {
+      visibility: hidden;
+    }
+
+    .ng-anchor {
+      position: absolute;
+    }
+  </style>
+
+
+  <base href="https://openfoodnetwork.org.au" />
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0" name="viewport">
+  <meta content="Open Food Network" property="og:title">
+  <meta
+    content="We begin from the ground up. With farmers and growers ready to tell their stories proudly and truly. With distributors ready to connect people with products fairly and honestly. With buyers who believe that better weekly shopping decisions can…"
+    property="og:description">
+  <meta content="/default_images/ofn-logo.png" property="og:image">
+  <meta content="noindex" name="robots">
+  <title>Welcome to Open Food Network</title>
+  <link href="/favicon-staging.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:400,300italic,400italic,300,700,700italic|Oswald:300,400,700"
+    rel="stylesheet" type="text/css">
+  <link href="/assets/darkswarm/all.css" media="screen" rel="stylesheet">
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="3WbTwNWGglA01nQDOlnHX626FMO4wXxcuYflosUamMY=" name="csrf-token">
+  <meta class="foundation-data-attribute-namespace">
+  <meta class="foundation-mq-xxlarge">
+  <meta class="foundation-mq-xlarge-only">
+  <meta class="foundation-mq-xlarge">
+  <meta class="foundation-mq-large-only">
+  <meta class="foundation-mq-large">
+  <meta class="foundation-mq-medium-only">
+  <meta class="foundation-mq-medium">
+  <meta class="foundation-mq-small-only">
+  <meta class="foundation-mq-small">
+  <style></style>
+  <meta class="foundation-mq-topbar">
+  <meta class="foundation-mq-small">
+  <meta class="foundation-mq-medium">
+  <meta class="foundation-mq-large">
+  <meta class="foundation-mq-topbar">
+</head>
+
+<body body-scroll="" class="off-canvas ng-scope" ng-app="Darkswarm">
+  <!--[if lte IE 8]>
+    <div class='alert-box alert' data-alert='' id='ie-warning'>
+    <div class='row ie-msg'>
+    <div class='small-4 large-2 columns'>
+    <i class='ofn-i_012-warning'></i>
+    </div>
+    <div class='small-8 large-10 columns'>
+    <h3>
+    Your browser is out of date :-(
+    </h3>
+    <p>
+    For the best Open Food Network experience, we strongly recommend upgrading your browser:
+    </p>
+    </div>
+    </div>
+    <div class='row'>
+    <div class='small-4 columns browserbtn'>
+    <a class='browserlogo' href='https://www.google.com/intl/en_au/chrome/browser/' target='_blank'>
+    <img src='/assets/browser-logos/chrome.png'>
+    </a>
+    <a href='https://www.google.com/intl/en_au/chrome/browser/' target='_blank'>
+    Download Chrome
+    </a>
+    </div>
+    <div class='small-4 columns browserbtn'>
+    <a class='browserlogo' href='http://www.mozilla.org/en-US/firefox/new/' target='_blank'>
+    <img src='/assets/browser-logos/firefox.png'>
+    </a>
+    <a href='http://www.mozilla.org/en-US/firefox/new/' target='_blank'>
+    Download Firefox
+    </a>
+    </div>
+    <div class='small-4 columns browserbtn'>
+    <a class='browserlogo' href='http://windows.microsoft.com/en-AU/internet-explorer/download-ie' target='_blank'>
+    <img src='/assets/browser-logos/internet-explorer.png'>
+    </a>
+    <a href='http://windows.microsoft.com/en-AU/internet-explorer/download-ie' target='_blank'>
+    Upgrade Internet Explorer
+    </a>
+    </div>
+    </div>
+    <div class='row ie-msg'>
+    <div class='small-12 large-12 columns'>
+    <div class='text-center'>
+    <em>
+    Can&#39;t upgrade your browser? Try Open Food Network on your smartphone :-)
+    </em>
+    </div>
+    </div>
+    </div>
+    <a class='close' href='#' id='closeie'>×</a>
+    </div>
+    
+    <script src="/assets/iehack.js"></script>
+    <![endif]-->
+
+  <div class="off-canvas-wrap ng-isolate-scope move-right" offcanvas="">
+    <div class="fixed off-canvas-fixed">
+      <div ng-controller="CartDropdownCtrl" class="ng-scope">
+        <nav class="top-bar show-for-large-up move-up" data-topbar="" style="">
+
+          <section class="top-bar-section">
+            <ul class="left">
+              <li class="ofn-logo">
+                <a href="/">
+                  <img src="/default_images/ofn-logo.png">
+                </a>
+              </li>
+              <li class="powered-by">
+                <img src="/favicon.ico">
+                <span>
+                  Powered by
+                  <a href="/">
+                    Open Food Network
+                  </a>
+                </span>
+              </li>
+            </ul>
+            <ul class="center">
+              <li>
+                <a href="/shops">
+                  <span class="nav-primary">
+                    Shops
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/map">
+                  <span class="nav-primary">
+                    Map
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/producers">
+                  <span class="nav-primary">
+                    Producers
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="/groups">
+                  <span class="nav-primary">
+                    Groups
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://about.openfoodnetwork.org.au/">
+                  <span class="nav-primary">
+                    About
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <ul class="menu icons right">
+              <li class="language-switcher has-dropdown not-click">
+                <a class="top-bar--menu-item-with-icon" href="#">
+                  <i class="ofn-i_071-globe"></i>
+                  <span>English</span>
+                </a>
+                <ul class="dropdown">
+                  <li class="title back js-generated">
+                    <h5><a href="javascript:void(0)">Back</a></h5>
+                  </li>
+                  <li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="#">
+                      <i class="ofn-i_071-globe"></i>
+                      <span>English</span>
+                    </a></li>
+                  <li>
+                    <a href="?locale=en">English</a>
+                  </li>
+                  <li>
+                    <a href="?locale=es">Castellano</a>
+                  </li>
+                  <li>
+                    <a href="?locale=en-GB">English</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="user-menu has-dropdown not-click">
+                <a class="top-bar--menu-item-with-icon" href="#">
+                  <img src="/assets/menu/icn-profile.svg">
+                  <span>
+                    Profile
+                  </span>
+                </a>
+                <ul class="dropdown">
+                  <li class="title back js-generated">
+                    <h5><a href="javascript:void(0)">Back</a></h5>
+                  </li>
+                  <li class="parent-link hide-for-medium-up"><a class="parent-link js-generated" href="#">
+                      <img src="/assets/menu/icn-profile.svg">
+                      <span>
+                        Profile
+                      </span>
+                    </a></li>
+                  <li>
+                    <a href="/admin" target="_blank">
+                      <i class="ofn-i_021-tools"></i>
+                      Administration
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/account">
+                      <i class="ofn-i_015-user"></i>
+                      Account
+                      (ofn@example.com)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/logout" title="Logout">
+                      <i class="ofn-i_018-unlocked"></i>
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="current_hub ng-scope" ng-controller="CurrentHubCtrl" ng-show="CurrentHub.hub.id">
+                <a href="/shop">
+                  <span class="top-bar--current-hub-prefix">
+                    Shopping
+                    @
+                  </span>
+                  <span class="top-bar--current-hub-name ng-binding">Mary's Online Shop</span>
+                </a>
+              </li>
+              <li class="cart">
+                <span class="cart-span ng-scope dirty"
+                  ng-class="{ dirty: Cart.dirty || Cart.empty(), 'pure-dirty': Cart.dirty }" ng-controller="CartCtrl">
+                  <a class="icon" id="cart" ng-click="toggleCartSidebar()">
+                    <span>
+                      Cart
+                    </span>
+                    <span class="count">
+                      <img src="/assets/menu/icn-cart.svg">
+                      <span class="ng-binding">
+                        0
+                      </span>
+                    </span>
+                  </a>
+                </span>
+
+              </li>
+            </ul>
+          </section>
+        </nav>
+
+        <ofn-flash class="ng-isolate-scope move-up">
+          <!-- ngRepeat: flash in flashes -->
+        </ofn-flash>
+        <nav class="tab-bar show-for-medium-down move-up">
+          <section class="left">
+            <a class="left-off-canvas-toggle menu-icon">
+              <img alt="Btn menu mobile" src="/assets/menu/btn-menu-mobile.png">
+            </a>
+          </section>
+          <section class="left">
+            <div class="ofn-logo">
+              <a href="/">
+                <img height="26" src="/logo_mobiles/original/missing.png" srcset="/default_images/ofn-logo-mobile.svg"
+                  width="75">
+              </a>
+            </div>
+          </section>
+          <section class="right">
+            <span class="cart-span dirty" ng-class="{ dirty: Cart.dirty || Cart.empty(), 'pure-dirty': Cart.dirty }">
+              <a class="icon" ng-click="toggleCartSidebar()">
+                <span>
+                  Cart
+                </span>
+                <span class="count">
+                  <img alt="Icn cart" src="/assets/menu/icn-cart.svg">
+                  <span class="ng-binding">
+                    0
+                  </span>
+                </span>
+              </a>
+            </span>
+            <a href="/shop" class="ng-binding">
+
+            </a>
+          </section>
+        </nav>
+
+        <aside class="left-off-canvas-menu show-for-medium-down ng-scope" ng-controller="OffcanvasCtrl"
+          style="height: 725px;">
+          <ul class="off-canvas-list">
+            <li class="ofn-logo">
+              <a href="/">
+                <img height="26" src="/logo_mobiles/original/missing.png" srcset="/default_images/ofn-logo-mobile.svg"
+                  width="75">
+              </a>
+            </li>
+            <li class="li-menu">
+              <a href="/shops">
+                <span class="nav-primary">
+                  <i class="ofn-i_019-map-pin"></i>
+                  Shops
+                </span>
+              </a>
+            </li>
+            <li class="li-menu">
+              <a href="/map">
+                <span class="nav-primary">
+                  <i class="ofn-i_037-map"></i>
+                  Map
+                </span>
+              </a>
+            </li>
+            <li class="li-menu">
+              <a href="/producers">
+                <span class="nav-primary">
+                  <i class="ofn-i_036-producers"></i>
+                  Producers
+                </span>
+              </a>
+            </li>
+            <li class="li-menu">
+              <a href="/groups">
+                <span class="nav-primary">
+                  <i class="ofn-i_035-groups"></i>
+                  Groups
+                </span>
+              </a>
+            </li>
+            <li class="li-menu">
+              <a href="https://about.openfoodnetwork.org.au/">
+                <span class="nav-primary">
+                  <i class="ofn-i_013-help"></i>
+                  About
+                </span>
+              </a>
+            </li>
+            <li class="language-switcher li-menu">
+              <a>
+                <i class="ofn-i_071-globe"></i>
+                English
+              </a>
+              <ul>
+                <li>
+                  <a href="?locale=en">English</a>
+                </li>
+                <li>
+                  <a href="?locale=es">Castellano</a>
+                </li>
+                <li>
+                  <a href="?locale=en-GB">English</a>
+                </li>
+              </ul>
+            </li>
+            <li></li>
+            <li>
+              <a href="/admin" target="_blank">
+                <i class="ofn-i_021-tools"></i>
+                Admin
+              </a>
+            </li>
+            <li>
+              <a href="/account">
+                <i class="ofn-i_015-user"></i>
+                Account
+              </a>
+            </li>
+            <li>
+              <a href="/logout" title="Logout">
+                <i class="ofn-i_018-unlocked"></i>
+                Logout
+              </a>
+            </li>
+
+          </ul>
+        </aside>
+
+        <div class="expanding-sidebar cart-sidebar ng-scope hidden ng-hide"
+          ng-class="{'shown': showCartSidebar, 'hidden': !showCartSidebar}" ng-controller="CartCtrl"
+          ng-show="showCartSidebar">
+          <div class="background" ng-click="toggleCartSidebar()"></div>
+          <div class="sidebar">
+            <div class="cart-header">
+              <span class="title ng-binding ng-hide" ng-show="Cart.line_items.length == 1">
+                0 item in your cart
+              </span>
+              <span class="title ng-binding ng-hide" ng-show="Cart.line_items.length > 1">
+                0 items in your cart
+              </span>
+              <a class="close" ng-click="toggleCartSidebar()">
+                Close
+                <i class="ofn-i_009-close"></i>
+              </a>
+            </div>
+            <div class="cart-content">
+              <table>
+                <tbody>
+                  <!-- ngRepeat: line_item in Cart.line_items -->
+                </tbody>
+              </table>
+              <div class="cart-empty" ng-show="Cart.line_items.length == 0">
+                <p>
+                  Your cart is empty
+                </p>
+                <a class="go-shopping button large bright" ng-href="/shop" ng-show="true" href="/shop">
+                  Take me shopping!
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-footer ng-hide" ng-show="Cart.line_items.length > 0">
+            <p class="cart-total">
+              <strong class="ng-binding">
+                Total
+                $0.00
+              </strong>
+            </p>
+            <div class="fullwidth">
+              <a class="edit-cart button large dark left ng-binding" href="/cart" ng-class="{ dirty: Cart.dirty }"
+                ng-disabled="Cart.dirty || Cart.empty()" disabled="disabled">
+                Cart empty
+              </a>
+              <a class="checkout button large bright right" href="/checkout" ng-disabled="Cart.dirty || Cart.empty()"
+                disabled="disabled">
+                Checkout
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center page-alert fixed ng-scope move-up" ofn-page-alert="">
+        <div class="alert-box">
+          <div class="alert-cta">
+            <h6>
+              <a href="/register" target="_blank">
+                Interested in getting on the Open Food Network?
+                &nbsp;
+                <strong>
+                  Register here
+                  <i class="ofn-i_054-point-right"></i>
+                </strong>
+              </a>
+            </h6>
+          </div>
+
+
+          <a class="close" ng-click="close()">×</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="inner-wrap move-up">
+      <section role="main">
+        <style>
+          #tagline:before {
+            background-image: url("/system/content_configurations/home_heros/original/home.jpg?2015");
+            height: 100%;
+            height: 100vh;
+            bottom: inherit;
+          }
+        </style>
+        <div ng-controller="HomeCtrl" class="ng-scope">
+          <div id="tagline">
+            <div class="row">
+              <div class="small-12 text-center columns">
+                <h1>
+                  <!-- TODO: Rohan - logo asset & width is content manageable: -->
+                  <img src="/assets/logo-white-notext.png" title="Spree Demo Site">
+                  <br>
+                  <a class="button transparent" href="/shops">
+                    Shop Now
+                  </a>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div id="panes">
+            <div class="pane" id="brand-story">
+              <div class="row">
+                <div class="small-12 medium-8 medium-offset-2 columns text-center">
+                  <h2>
+                    Food, unincorporated.
+                  </h2>
+                  <p>
+                    Sometimes the best way to fix the system is to start a new one…
+                  </p>
+                  <div class="hide-show slideable" id="brand-story-text"
+                    style="overflow: hidden; height: 0px; transition-property: height; transition-duration: 1s; transition-timing-function: ease-in-out;">
+                    <div class="slideable_content" style="margin:0 !important; padding:0 !important">
+                      <p>
+                        We begin from the ground up. With farmers and growers ready to tell their stories proudly and
+                        truly. With distributors ready to connect people with products fairly and honestly. With buyers
+                        who believe that better weekly shopping decisions can seriously change the world.
+                      </p>
+                      <p>
+                        Then we need a way to make it real. A way to empower everyone who grows, sells and buys food. A
+                        way to tell all the stories, to handle all the logistics. A way to turn transaction into
+                        transformation every day.
+                      </p>
+                      <p>
+                        So we build an online marketplace that levels the playing field. It’s transparent, so it creates
+                        real relationships. It’s open source, so it’s owned by everyone. It scales to regions and
+                        nations, so people start versions across the world.
+                      </p>
+                      <p>
+                        It works everywhere. It changes everything.
+                      </p>
+                      <p>
+                        <strong>
+                          We call it Open Food Network.
+                        </strong>
+                      </p>
+                      <p>
+                        We all love food. Now we can love our food system too.
+                      </p>
+                    </div>
+                  </div>
+                  <a class="text-vbig" ng-click="toggleBrandStory()" slide-toggle="#brand-story-text">
+                    <i class="ofn-i_005-caret-down" ng-hide="brandStoryExpanded"></i>
+                    <i class="ofn-i_006-caret-up ng-hide" ng-show="brandStoryExpanded"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pane" id="system">
+              <div class="row">
+                <div class="small-12 medium-12 large-8 large-offset-2 columns text-center">
+                  <h2>
+                    Shopping - here's how it works.
+                  </h2>
+                  <div class="row">
+                    <div class="small-12 medium-4 columns text-left">
+                      <div class="home-icon-box">
+                        <a class="search" href="/shops"></a>
+                      </div>
+                      <div class="home-icon-box-bottom">
+                        <h4>
+                          1. Search
+                        </h4>
+                        <p class="text-normal">
+                          Search our diverse, independent shops for seasonal local food. Search by neighbourhood and
+                          food category, or whether you prefer delivery or pickup.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="small-12 medium-4 columns text-left">
+                      <div class="home-icon-box">
+                        <a class="shop" href="/shops"></a>
+                      </div>
+                      <div class="home-icon-box-bottom">
+                        <h4>
+                          2. Shop
+                        </h4>
+                        <p class="text-normal">
+                          Transform your transactions with affordable local food from diverse producers and hubs. Know
+                          the stories behind your food and the people who make it!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="small-12 medium-4 columns text-left">
+                      <div class="home-icon-box">
+                        <a class="pick-up-delivery" href="/shops"></a>
+                      </div>
+                      <div class="home-icon-box-bottom">
+                        <h4>
+                          3. Pick-up / Delivery
+                        </h4>
+                        <p class="text-normal">
+                          Hang on for your delivery, or visit your producer or hub for a more personal connection with
+                          your food. Food shopping as diverse as nature intended it.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pane" id="cta">
+              <div class="row">
+                <div class="small-12 columns text-center">
+                  <h2>
+                    Shopping that makes the world a better place.
+                  </h2>
+                  <br>
+                  <a class="button transparent" href="/shops">
+                    I'm Ready
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pane" id="stats">
+              <div class="row header">
+                <div class="small-12 medium-8 medium-offset-2 columns text-center">
+                  <h2>
+                    We're creating a new food system.
+                  </h2>
+                </div>
+              </div>
+              <div class="row content">
+                <div class="small-12 medium-3 columns text-center">
+                  <h4>
+                    <strong>3</strong>
+                    food producers
+                  </h4>
+                </div>
+                <div class="small-12 medium-3 columns text-center">
+                  <h4>
+                    <strong>4</strong>
+                    food shops
+                  </h4>
+                </div>
+                <div class="small-12 medium-3 columns text-center">
+                  <h4>
+                    <strong>1</strong>
+                    food shoppers
+                  </h4>
+                </div>
+                <div class="small-12 medium-3 columns text-center">
+                  <h4>
+                    <strong>8</strong>
+                    food orders
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <footer>
+            <div class="footer-global">
+              <div class="row">
+                <div class="small-12 columns text-center">
+                  <div class="logo">
+                    <img src="/assets/logo-white-notext.png">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-12 medium-8 medium-offset-2 columns text-center">
+                  <div class="alert-box">
+                    <div class="alert-cta">
+                      <h6>
+                        <a href="/register" target="_blank">
+                          Interested in getting on the Open Food Network?
+                          &nbsp;
+                          <strong>
+                            Register here
+                            <i class="ofn-i_054-point-right"></i>
+                          </strong>
+                        </a>
+                      </h6>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-local">
+              <div class="row">
+                <div class="small-12 medium-2 medium-offset-2 columns text-center">
+                  <p class="secure-icon">
+                    <i class="ofn-i_017-locked"></i>
+                  </p>
+                </div>
+                <div class="small-12 medium-6 columns text-center">
+                  <p class="text-big secure-text">
+                    Secure and trusted.
+                  </p>
+                  <p class="secure-text">
+                    Open Food Network uses SSL encryption (2048 bit RSA) everywhere to keep your shopping and payment
+                    information private. Our servers do not store your credit card details and payments are processed by
+                    PCI-compliant services.
+                  </p>
+                </div>
+                <div class="small-12 medium-2 columns"></div>
+              </div>
+              <div class="row">
+                <div class="small-12 medium-8 medium-offset-2 columns text-center">
+                  <hr class="hr-light">
+                  <br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-6 medium-3 medium-offset-2 columns text-left">
+                  <!-- / This is the instance-managed set of links: -->
+                  <h4>
+                    Keep in touch
+                  </h4>
+                  <p class="social-icons">
+                    <a href="https://www.facebook.com/OpenFoodNet">
+                      <i class="ofn-i_044-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/OpenFoodNet">
+                      <i class="ofn-i_041-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/openfoodnetworkuk/">
+                      <i class="ofn-i_043-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/openfoodnetwork/">
+                      <i class="ofn-i_042-linkedin"></i>
+                    </a>
+                  </p>
+                  <p>
+                    <a href="gro.krowtendoofnepo@olleh" mailto="" target="_blank">
+                      Email us
+                    </a>
+                  </p>
+                  <p><a href="/">Newsletter sign-up</a></p>
+
+                  <p><a href="/">News</a></p>
+
+                  <p><a href="/">Calendar</a></p>
+
+                </div>
+                <div class="small-6 medium-3 columns text-left">
+                  <h4>
+                    Navigate
+                  </h4>
+                  <p>
+                    <a href="/shops">
+                      Shops
+                    </a>
+                  </p>
+                  <p>
+                    <a href="/map">
+                      Map
+                    </a>
+                  </p>
+                  <p>
+                    <a href="/producers">
+                      Producers
+                    </a>
+                  </p>
+                  <p>
+                    <a href="/groups">
+                      Groups
+                    </a>
+                  </p>
+                  <p>
+                    <a href="http://www.openfoodnetwork.org/ofn-local/open-food-network-australia/">
+                      About
+                    </a>
+                  </p>
+                </div>
+                <div class="small-12 medium-2 columns text-left">
+                  <h4>
+                    Join us
+                  </h4>
+                  <p>
+                    Create a listing, shop or group directory on the Open Food Network.
+                    <a href="/sell">
+                      Tell me more!
+                    </a>
+                  </p>
+                </div>
+                <div class="medium-2 columns text-center">
+                  <!-- Placeholder -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-12 medium-8 medium-offset-2 columns text-center">
+                  <hr class="hr-light">
+                  <br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-12 medium-3 medium-offset-2 columns text-left">
+                  <a href="/">
+                    <img src="/default_images/ofn-logo-footer.png" width="220">
+                  </a>
+                </div>
+                <div class="small-12 medium-5 columns text-left">
+                  <p class="text-small">
+                    Read our
+                    <a href="/Terms-of-service.pdf" target="_blank">
+                      Terms and conditions
+                    </a>
+                    |
+                    Find us on
+                    <a href="https://github.com/openfoodfoundation/openfoodnetwork" target="_blank">GitHub</a>
+                  </p>
+                  <p class="text-small">
+                    Open Food Network is a free and open source software platform. Our content is licensed with <a
+                      href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> and our code with <a
+                      href="https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)">AGPL 3</a>.
+                  </p>
+                  <p class="text-small">
+                  </p>
+                  <div>
+                    We take good care of your data. See our <a cookies-banner="false" cookies-policy-modal="true"
+                      href="">cookies policy</a>
+                  </div>
+                  <p></p>
+                </div>
+                <div class="medium-2 columns text-center">
+                  <!-- Placeholder -->
+                </div>
+              </div>
+            </div>
+          </footer>
+
+        </div>
+
+        <div id="footer"></div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
